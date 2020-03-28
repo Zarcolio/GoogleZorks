@@ -20,7 +20,7 @@ start "" "https://www.google.nl/search?num=100&filter=0&q=site:%1+-site:www.%1+%
 timeout /t 10
 start "" "https://www.google.nl/search?num=100&filter=0&q=site:www.%1+inurl:login+|inurl:logon+|inurl:signin+|inurl:signon+|inurl:admin+|inurl:portal+|intitle:login+|intitle:logon+|intitle:%%22log+on%%22+|intitle:%%22log+in%%22+|intitle:signin+|intitle:%%22sign+in%%22+|intitle:signon+|intitle:%%22sign+on%%22+|intitle:admin+|intitle:portal+|intitle:%%22web+access%%22&filter=0"
 timeout /t 10
-start "" "https://www.google.nl/search?num=100&filter=0&q=site:%1+inurl%%3A%%2Foam%%2Fserver%%2Fobrareq.cgi+|+ext%%3A%%22encquery%%22+|+ext%%3A%%22Portal_Webcenter%%22+OR+inurl%%3A%%2Fnidp%%2Fsaml2+|inurl:/adfs/+|inurl:core/as_login.php?+|%%22CAS+Central+Authentication+Service%%22+|inurl:/cas/login/&filter=0"
+start "" "https://www.google.nl/search?num=100&filter=0&q=site:%1+inurl%%3A%%2Foam%%2Fserver%%2Fobrareq.cgi+|+ext%%3A%%22encquery%%22+|+ext%%3A%%22Portal_Webcenter%%22+|+inurl%%3A%%2Fnidp%%2Fsaml2+|inurl:SAML2/Redirect/+|inurl:/adfs/+|inurl:core/as_login.php?+|%%22CAS+Central+Authentication+Service%%22+|inurl:/cas/login/&filter=0"
 
 REM Login pages, Dutch:
 timeout /t 10
