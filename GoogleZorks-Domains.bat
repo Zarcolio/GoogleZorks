@@ -1,6 +1,5 @@
 @ECHO OFF
 "c:\Program Files\Mozilla Firefox\firefox.exe" -new-window
-
 REM Search for domains:
 
 timeout /t 10
@@ -48,10 +47,14 @@ timeout /t 10
 start "" "https://www.google.nl/search?num=100&filter=0&q=site:pastebin.com+|site:pastelink.net+|site:pastefs.com+|site:github.com+|site:site:gitlab.com+|site:bitbucket.org+|site:codebeautify.org+|site:jsfiddle.net+|site:repl.it+|site:codepen.io+|site:ideone.com+%%22%1%%22&filter=0"
 
 timeout /t 10
-start "" "https://www.google.nl/search?num=100&filter=0&q=site:%1+%%22copyright+1991%%22+%%7C+%%22copyright+1992%%22+%%7C+%%22copyright+1993%%22+%%7C+%%22copyright+1994%%22+%%7C+%%22copyright+1995%%22+%%7C+%%22copyright+1996%%22+%%7C+%%22copyright+1997%%22+%%7C+%%22copyright+1998%%22+%%7C+%%22copyright+1999%%22+%%7C+%%22copyright+2000%%22+%%7C+%%22copyright+2001%%22+%%7C+%%22copyright+2002%%22+%%7C+%%22copyright+2003%%22+%%7C+%%22copyright+2004%%22+%%7C+%%22copyright+2005%%22&filter=0""
+start "" "https://www.google.nl/search?num=100&filter=0&q=site:%1+%%22copyright+1993%%22+%%7C+%%22copyright+1994%%22+%%7C+%%22copyright+1995%%22+%%7C+%%22copyright+1996%%22+%%7C+%%22copyright+1997%%22+%%7C+%%22copyright+1998%%22+%%7C+%%22copyright+1999%%22+%%7C+%%22copyright+2000%%22+%%7C+%%22copyright+2001%%22+%%7C+%%22copyright+2002%%22+%%7C+%%22copyright+2003%%22+%%7C+%%22copyright+2004%%22+%%7C+%%22copyright+2005%%22&filter=0""
 timeout /t 10
 start "" "https://www.google.nl/search?num=100&filter=0&q=site:%1+%%22copyright+2006%%22+%%7C+%%22copyright+2007%%22+%%7C+%%22copyright+2008%%22+%%7C+%%22copyright+2009%%22+%%7C+%%22copyright+2010%%22+%%7C+%%22copyright+2011%%22+%%7C+%%22copyright+2012%%22+%%7C+%%22copyright+2013%%22+%%7C+%%22copyright+2014%%22+%%7C+%%22copyright+2015%%22+%%7C+%%22copyright+2016%%22+%%7C+%%22copyright+2017%%22+%%7C+%%22copyright+2018%%22+%%7C+%%22copyright+2019%%22+%%7C+%%22copyright+2020%%22&filter=0""
 
+timeout /t 10
+start "" "https://www.google.nl/search?num=100&filter=0&q=%%22%1%%22+-site:%1+%%22copyright+1993%%22+%%7C+%%22copyright+1994%%22+%%7C+%%22copyright+1995%%22+%%7C+%%22copyright+1996%%22+%%7C+%%22copyright+1997%%22+%%7C+%%22copyright+1998%%22+%%7C+%%22copyright+1999%%22+%%7C+%%22copyright+2000%%22+%%7C+%%22copyright+2001%%22+%%7C+%%22copyright+2002%%22+%%7C+%%22copyright+2003%%22+%%7C+%%22copyright+2004%%22+%%7C+%%22copyright+2005%%22+%%7C++%%22copyright+2006%%22&newwindow=1&sxsrf=ALeKk02hCcKQ3swIUjCi_IX1kntsWXuZmg%%3A1628767512701&ei=GAUVYcyGKuH87_UPvrmXoAw&oq=%%22uu.nl%%22+-site%%3Auu.nl+%%22copyright+1993%%22+%%7C+%%22copyright+1994%%22+%%7C+%%22copyright+1995%%22+%%7C+%%22copyright+1996%%22+%%7C+%%22copyright+1997%%22+%%7C+%%22copyright+1998%%22+%%7C+%%22copyright+1999%%22+%%7C+%%22copyright+2000%%22+%%7C+%%22copyright+2001%%22+%%7C+%%22copyright+2002%%22+%%7C+%%22copyright+2003%%22+%%7C+%%22copyright+2004%%22+%%7C+%%22copyright+2005%%22+%%7C++%%22copyright+2006%%22&filter=0""
+timeout /t 10
+start "" "https://www.google.nl/search?num=100&filter=0&q=%%22%1%%22+-site:%1+%%22copyright+2007%%22+%%7C+%%22copyright+2008%%22+%%7C+%%22copyright+2009%%22+%%7C+%%22copyright+2010%%22+%%7C+%%22copyright+2011%%22+%%7C+%%22copyright+2012%%22+%%7C+%%22copyright+2013%%22+%%7C+%%22copyright+2014%%22+%%7C+%%22copyright+2015%%22+%%7C+%%22copyright+2016%%22+%%7C+%%22copyright+2017%%22+%%7C+%%22copyright+2018%%22+%%7C+%%22copyright+2019%%22+%%7C+%%22copyright+2020%%22&newwindow=1&sxsrf=ALeKk01ZJJHEUVV8mBobU2XTDt2G-AdyBQ%%3A1628767533023&ei=LQUVYbBUs4T27w-K-rrgAw&oq=%%22uu.nl%%22+-site%%3Auu.nl++%%22copyright+2007%%22+%%7C+%%22copyright+2008%%22+%%7C+%%22copyright+2009%%22+%%7C+%%22copyright+2010%%22+%%7C+%%22copyright+2011%%22+%%7C+%%22copyright+2012%%22+%%7C+%%22copyright+2013%%22+%%7C+%%22copyright+2014%%22+%%7C+%%22copyright+2015%%22+%%7C+%%22copyright+2016%%22+%%7C+%%22copyright+2017%%22+%%7C+%%22copyright+2018%%22+%%7C+%%22copyright+2019%%22+%%7C+%%22copyright+2020%%22&filter=0""
 
 REM IETS MET CHANGELOG DOEN!!!!
 
