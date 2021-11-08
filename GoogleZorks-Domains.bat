@@ -1,6 +1,5 @@
 @ECHO OFF
-
-"c:\Program Files (x86)\Mozilla Firefox\firefox.exe" -new-window
+"C:\Program Files (x86)\Mozilla Firefox\firefox.exe" -new-window
 
 SET year1=1995
 SET year2=1996
@@ -33,7 +32,7 @@ SET year28=2022
 
 REM Search for domains:
 
-rem https://www.google.com/search?q=site:cbr.nl+-site:www.cbr.nl+%22Restricted+area%22+|login+|logon+|+%22log+on%22+|logoff+|+%22log-off%22+|+%22log+in%22+|signin+|signon+|+%22sign+in%22+|+%22sign+on%22+|password+|passwd+|user+|username+|account+|admin+|portal+|+%22web+access%22+-user-agent&num=100&client=firefox-b-d&filter=0
+rem https://www.google.com/search?q=site:cbr.nl+-site:www.cbr.nl+%22Restricted+area%22+%%7C+login+%%7C+logon+%%7C+%22log+on%22+%%7C+logoff+%%7C+%22log-off%22+%%7C+%22log+in%22+%%7C+signin+%%7C+signon+%%7C+%22sign+in%22+%%7C+%22sign+on%22+%%7C+password+%%7C+passwd+%%7C+user+%%7C+username+%%7C+account+%%7C+admin+%%7C+portal+%%7C+%22web+access%22+-user-agent&num=100&client=firefox-b-d&filter=0
 
 start "" "https://www.google.com/search?q=%%22%1%%22+-site:%1&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
@@ -47,33 +46,33 @@ start "" "https://www.google.com/search?q=site:%1+-site:www.%1+inurl:https&num=1
 timeout /t 10
 start "" "https://www.google.com/search?q=%%22*.%1%%22+-%%22www.%1%%22&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?q=site:*.%1+|+site:*.*.%1+-site:www.%1+-site:https://www.%1&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=site:*.%1+%%7C+site:*.*.%1+-site:www.%1+-site:https://www.%1&num=100&client=firefox-b-d&filter=0"
 REM Login pages:
 timeout /t 10
-start "" "https://www.google.com/search?q=site:%1+-site:www.%1+%%22Restricted+area%%22+|login+|logon+|+%%22log+on%%22+|logoff+|+%%22log-off%%22+|+%%22log+in%%22+|signin+|signon+|+%%22sign+in%%22+|+%%22sign+on%%22+|password+|passwd+|user+|username+|account+|admin+|portal+|+%%22web+access%%22+-user-agent&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=site:%1+-site:www.%1+%%22Restricted+area%%22+%%7C+%%22login%%22+%%7C+%%22logon%%22+%%7C%%22log+on%%22+%%7C+%%22logoff%%22+%%7C%%22log-off%%22+%%7C%%22log+in%%22+%%7C+%%22signin%%22+%%7C+%%22signon%%22+%%7C%%22sign+in%%22+%%7C%%22sign+on%%22+%%7C+%%22password%%22+%%7C+%%22passwd%%22+%%7C+%%22user%%22+%%7C+%%22username%%22+%%7C+%%22account%%22+%%7C+%%22admin%%22+%%7C+%%22portal%%22+%%7C%%22web+access%%22+-user-agent&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?q=site:www.%1+inurl:login+|inurl:logon+|inurl:signin+|inurl:signon+|inurl:admin+|inurl:portal+|intitle:login+|intitle:logon+|intitle:%%22log+on%%22+|intitle:%%22log+in%%22+|intitle:signin+|intitle:%%22sign+in%%22+|intitle:signon+|intitle:%%22sign+on%%22+|intitle:admin+|intitle:portal+|intitle:%%22web+access%%22+%%7CFTP&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=site:www.%1+inurl:login+%%7C+inurl:logon+%%7C+inurl:signin+%%7C+inurl:signon+%%7C+inurl:admin+%%7C+inurl:portal+%%7C+intitle:login+%%7C+intitle:logon+%%7C+intitle:%%22log+on%%22+%%7C+intitle:%%22log+in%%22+%%7C+intitle:signin+%%7C+intitle:%%22sign+in%%22+%%7C+intitle:signon+%%7C+intitle:%%22sign+on%%22+%%7C+intitle:admin+%%7C+intitle:portal+%%7C+intitle:%%22web+access%%22+%%7C+FTP&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?q=site:%1+inurl%%3A%%2Foam%%2Fserver%%2Fobrareq.cgi+|+ext%%3A%%22encquery%%22+|+ext%%3A%%22Portal_Webcenter%%22+|+oauth2+|+inurl%%3A%%2Fnidp%%2Fsaml2+|inurl:SAML2/Redirect/+|inurl:/adfs/+|inurl:core/as_login.php?+|%%22CAS+Central+Authentication+Service%%22+|inurl:/cas/login/&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=site:%1+inurl%%3A%%2Foam%%2Fserver%%2Fobrareq.cgi+%%7C+ext%%3A%%22encquery%%22+%%7C+ext%%3A%%22Portal_Webcenter%%22+%%7C+oauth2+%%7C+inurl%%3A%%2Fnidp%%2Fsaml2+%%7C+inurl:SAML2/Redirect/+%%7C+inurl:/adfs/+%%7C+inurl:core/as_login.php?+%%7C+%%22CAS+Central+Authentication+Service%%22+%%7C+inurl:/cas/login/&num=100&client=firefox-b-d&filter=0"
 
 timeout /t 10
 start "" "https://www.google.com/search?q=site:%1+%%22powered+by%%22&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?q=site:%1+ext:doc+|ext:docx+|ext:odt+|ext:rtf+|ext:sxw+|ext:psw+|ext:ppt+|ext:pptx+|ext:pps+|ext:csv&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=site:%1+ext:doc+%%7C+ext:docx+%%7C+ext:odt+%%7C+ext:rtf+%%7C+ext:sxw+%%7C+ext:psw+%%7C+ext:ppt+%%7C+ext:pptx+%%7C+ext:pps+%%7C+ext:csv&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?q=site:%1+ext:pdf+|ext:txt&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=site:%1+ext:pdf+%%7C+ext:txt&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?q=site:%1+ext:xml+|ext:conf+|ext:cnf+|ext:reg+|ext:inf+|ext:rdp+|ext:cfg+|ext:ora+|ext:ini+|ext:sql+|ext:dbf+|ext:mdb&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=site:%1+ext:xml+%%7C+ext:conf+%%7C+ext:cnf+%%7C+ext:reg+%%7C+ext:inf+%%7C+ext:rdp+%%7C+ext:cfg+%%7C+ext:ora+%%7C+ext:ini+%%7C+ext:sql+%%7C+ext:dbf+%%7C+ext:mdb&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?q=site:%1+inurl%%3Aservlet%%3Dhttp+|inurl%%3Aredir%%3Dhttp+|inurl%%3Aredirect%%3Dhttp+|inurl%%3Aredirecturl%%3Dhttp+|inurl%%3Aurl%%3Dhttp+|inurl%%3Arurl%%3Dhttp+|inurl%%3Ar_url%%3Dhttp+|inurl%%3Alink%%3Dhttp+|inurl%%3Ago%%3Dhttp+|inurl%%3Areturn%%3Dhttp+|inurl%%3Alocationurl%%3Dhttp+|inurl%%3Areturnuri%%3Dhttp+|inurl%%3Agoto%%3Dhttp+|inurl%%3Areturn_url%%3Dhttp&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=site:%1+inurl%%3Aservlet%%3Dhttp+%%7C+inurl%%3Aredir%%3Dhttp+%%7C+inurl%%3Aredirect%%3Dhttp+%%7C+inurl%%3Aredirecturl%%3Dhttp+%%7C+inurl%%3Aurl%%3Dhttp+%%7C+inurl%%3Arurl%%3Dhttp+%%7C+inurl%%3Ar_url%%3Dhttp+%%7C+inurl%%3Alink%%3Dhttp+%%7C+inurl%%3Ago%%3Dhttp+%%7C+inurl%%3Areturn%%3Dhttp+%%7C+inurl%%3Alocationurl%%3Dhttp+%%7C+inurl%%3Areturnuri%%3Dhttp+%%7C+inurl%%3Agoto%%3Dhttp+%%7C+inurl%%3Areturn_url%%3Dhttp&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?q=site:%1+inurl%%3Aservlet%%3Dhttps+|inurl%%3Aredir%%3Dhttps+|inurl%%3Aredirect%%3Dhttps+|inurl%%3Aredirecturl%%3Dhttps+|inurl%%3Aurl%%3Dhttps+|inurl%%3Arurl%%3Dhttps+|inurl%%3Ar_url%%3Dhttps+|inurl%%3Alink%%3Dhttps+|inurl%%3Ago%%3Dhttps+|inurl%%3Areturn%%3Dhttps+|inurl%%3Alocationurl%%3Dhttps+|inurl%%3Areturnuri%%3Dhttps+|inurl%%3Agoto%%3Dhttps+|inurl%%3Alogin?qurl+|inurl%%3Areturn_url%%3Dhttps&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=site:%1+inurl%%3Aservlet%%3Dhttps+%%7C+inurl%%3Aredir%%3Dhttps+%%7C+inurl%%3Aredirect%%3Dhttps+%%7C+inurl%%3Aredirecturl%%3Dhttps+%%7C+inurl%%3Aurl%%3Dhttps+%%7C+inurl%%3Arurl%%3Dhttps+%%7C+inurl%%3Ar_url%%3Dhttps+%%7C+inurl%%3Alink%%3Dhttps+%%7C+inurl%%3Ago%%3Dhttps+%%7C+inurl%%3Areturn%%3Dhttps+%%7C+inurl%%3Alocationurl%%3Dhttps+%%7C+inurl%%3Areturnuri%%3Dhttps+%%7C+inurl%%3Agoto%%3Dhttps+%%7C+inurl%%3Alogin?qurl+%%7C+inurl%%3Areturn_url%%3Dhttps&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?q=site:%1+%%22employees%%22+|%%22staff%%22|%%22working+at%%22&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=site:%1+%%22employees%%22+%%7C+%%22staff%%22%+%%7C+%%22working+at%%22&num=100&client=firefox-b-d&filter=0"
 rem timeout /t 10
-rem start "" "https://www.google.com/search?q=%%22%1%%22+site:pastebin.com+|site:pastelink.net+|site:pastefs.com&num=100&client=firefox-b-d&filter=0"
+rem start "" "https://www.google.com/search?q=%%22%1%%22+site:pastebin.com+%%7C+site:pastelink.net+%%7C+site:pastefs.com&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?q=site:pastebin.com+|site:pastelink.net+|site:pastefs.com+|site:github.com+|site:site:gitlab.com+|site:bitbucket.org+|site:codebeautify.org+|site:jsfiddle.net+|site:repl.it+|site:codepen.io+|site:ideone.com+%%22%1%%22&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=%%22%1%%22+site:pastebin.com+%%7C+site:pastelink.net+%%7C+site:pastefs.com+%%7C+site:github.com+%%7C+site:site:gitlab.com+%%7C+site:bitbucket.org+%%7C+site:codebeautify.org+%%7C+site:jsfiddle.net+%%7C+site:repl.it+%%7C+site:codepen.io+%%7C+site:ideone.com&num=100&client=firefox-b-d&filter=0"
 
 timeout /t 10
 start "" "https://www.google.com/search?num=100&filter=0&q=site:%1+%%22copyright+%year1%%%22+%%7C+%%22copyright+%year2%%%22+%%7C+%%22copyright+%year3%%%22+%%7C+%%22copyright+%year4%%%22+%%7C+%%22copyright+%year5%%%22+%%7C+%%22copyright+%year6%%%22+%%7C+%%22copyright+%year7%%%22+%%7C+%%22copyright+%year8%%%22+%%7C+%%22copyright+%year9%%%22"
@@ -104,13 +103,13 @@ start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1+%
 timeout /t 10
 start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1+%%22%year19%%%22+%%7C+%%22%year20%%%22+%%7C+%%22%year21%%%22+%%7C+%%22%year22%%%22+%%7C+%%22%year23%%%22+%%7C+%%22%year24%%%22+%%7C+%%22%year25%%%22+%%7C+%%22%year26%%%22+%%7C+%%22%year27%%%22"
 
-REM IETS MET CHANGELOG DOEN!!!!
+
 
 
 REM Originally from https://pentest-tools.com/information-gathering/google-hacking#
 rem start "" "https://www.google.com/search?q=site:%1+intitle:index.of&num=100&client=firefox-b-d&filter=0"
-rem start "" "https://www.google.com/search?q=site:%1+ext:sql+%%7Cext:dbf+|ext:mdb+|++ext:db+ext:bkf+|ext:bkp+|ext:bak+|ext:old+|ext:backup+ext:log&num=100&client=firefox-b-d&filter=0"
-rem start "" "https://www.google.com/search?num=100&client=firefox-b-d&q=site:%1+inurl:login+|intitle:login+|inurl:logon+|intitle:logon+|intitle:%%22log+on%%22+|intitle:%%22log+in%%22+|+%%22log+on%%22+|+%%22log+in%%22+|login+|logon+|password+|passwd+|user+|username" 
+rem start "" "https://www.google.com/search?q=site:%1+ext:sql+%%7C+ext:dbf+%%7C+ext:mdb+%%7C++ext:db+ext:bkf+%%7C+ext:bkp+%%7C+ext:bak+%%7C+ext:old+%%7C+ext:backup+ext:log&num=100&client=firefox-b-d&filter=0"
+rem start "" "https://www.google.com/search?num=100&client=firefox-b-d&q=site:%1+inurl:login+%%7C+intitle:login+%%7C+inurl:logon+%%7C+intitle:logon+%%7C+intitle:%%22log+on%%22+%%7C+intitle:%%22log+in%%22+%%7C+%%22log+on%%22+%%7C+%%22log+in%%22+%%7C+login+%%7C+logon+%%7C+password+%%7C+passwd+%%7C+user+%%7C+username" 
 rem start "" "https://www.google.com/search?num=100&client=firefox-b-d&q=site:%1+intitle:phpinfo+%%22published+by+the+PHP+Group%%22&num=100&client=firefox-b-d&filter=0"
-rem start "" "https://www.google.com/search?num=100&client=firefox-b-d&q=site:%1+intext:%%22sql+syntax+near%%22+|intext:%%22syntax+error+has+occurred%%22+|intext:%%22incorrect+syntax+near%%22+|intext:%%22unexpected+end+of+SQL+command%%22+|intext:%%22Warning:+mysql_connect%%28%%29%%22+|intext:%%22Warning:+mysql_query%%28%%29%%22+|intext:%%22Warning:+pg_connect%%28%%29%%22&num=100&client=firefox-b-d&filter=0"
+rem start "" "https://www.google.com/search?num=100&client=firefox-b-d&q=site:%1+intext:%%22sql+syntax+near%%22+%%7C+intext:%%22syntax+error+has+occurred%%22+%%7C+intext:%%22incorrect+syntax+near%%22+%%7C+intext:%%22unexpected+end+of+SQL+command%%22+%%7C+intext:%%22Warning:+mysql_connect%%28%%29%%22+%%7C+intext:%%22Warning:+mysql_query%%28%%29%%22+%%7C+intext:%%22Warning:+pg_connect%%28%%29%%22&num=100&client=firefox-b-d&filter=0"
 

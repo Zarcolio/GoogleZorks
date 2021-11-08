@@ -1,5 +1,6 @@
 @ECHO OFF
-"c:\Program Files (x86)\Mozilla Firefox\firefox.exe" -new-window
+"C:\Program Files (x86)\Mozilla Firefox\firefox.exe" -new-window
+
 
 SET year1=1995
 SET year2=1996
