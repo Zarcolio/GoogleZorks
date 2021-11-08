@@ -30,11 +30,12 @@ SET year26=2020
 SET year27=2021
 SET year28=2022
 
-start "" "https://www.google.com/search?num=100&filter=0&q=site:%1+-site:www.%1+inloggen+%%7Cportaal+%%7Cgebruiker+%%7Cgebruikersnaam+%%7Cwachtwoord+%%7Ctoegang&filter=0"
+
+timeout /t 5
+
+start "" "https://www.google.com/search?num=100&filter=0&q=site:%1+-site:www.%1+%%22inloggen%%22+%%7C+%%22portaal%%22+%%7C+%%22gebruiker%%22+%%7C+%%22gebruikersnaam%%22+%%7C+%%22wachtwoord%%22+%%7C+%%22toegang%%22&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?num=100&filter=0&q=site:www.%1++|%%22medewerkers%%22+|%%22personeel%%22"
-timeout /t 10
-start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1&filter=0"
+start "" "https://www.google.com/search?num=100&filter=0&q=site:www.%1+%%22medewerkers%%22+%%7C+%%22personeel%%22+%%7C+%%22werken+bij%%22"
 
 timeout /t 10
 start "" "https://www.google.com/search?num=100&filter=0&q=site:%1+%%22laatst+bijgewerkt+%year1%%%22+%%7C+%%22laatst+bijgewerkt+%year2%%%22+%%7C+%%22laatst+bijgewerkt+%year3%%%22+%%7C+%%22laatst+bijgewerkt+%year4%%%22+%%7C+%%22laatst+bijgewerkt+%year5%%%22+%%7C+%%22laatst+bijgewerkt+%year6%%%22+%%7C+%%22laatst+bijgewerkt+%year7%%%22+%%7C+%%22laatst+bijgewerkt+%year8%%%22+%%7C+%%22laatst+bijgewerkt+%year9%%%22"

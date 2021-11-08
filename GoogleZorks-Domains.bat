@@ -69,9 +69,9 @@ start "" "https://www.google.com/search?q=site:%1+inurl%%3Aservlet%%3Dhttp+|inur
 timeout /t 10
 start "" "https://www.google.com/search?q=site:%1+inurl%%3Aservlet%%3Dhttps+|inurl%%3Aredir%%3Dhttps+|inurl%%3Aredirect%%3Dhttps+|inurl%%3Aredirecturl%%3Dhttps+|inurl%%3Aurl%%3Dhttps+|inurl%%3Arurl%%3Dhttps+|inurl%%3Ar_url%%3Dhttps+|inurl%%3Alink%%3Dhttps+|inurl%%3Ago%%3Dhttps+|inurl%%3Areturn%%3Dhttps+|inurl%%3Alocationurl%%3Dhttps+|inurl%%3Areturnuri%%3Dhttps+|inurl%%3Agoto%%3Dhttps+|inurl%%3Alogin?qurl+|inurl%%3Areturn_url%%3Dhttps&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?q=site:%1+%%22employees%%22+|%%22staff%%22&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=site:%1+%%22employees%%22+|%%22staff%%22|%%22working+at%%22&num=100&client=firefox-b-d&filter=0"
 rem timeout /t 10
-rem start "" "https://www.google.com/search?q=site:pastebin.com+|site:pastelink.net+|site:pastefs.com+%%22%1%%22&num=100&client=firefox-b-d&filter=0"
+rem start "" "https://www.google.com/search?q=%%22%1%%22+site:pastebin.com+|site:pastelink.net+|site:pastefs.com&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
 start "" "https://www.google.com/search?q=site:pastebin.com+|site:pastelink.net+|site:pastefs.com+|site:github.com+|site:site:gitlab.com+|site:bitbucket.org+|site:codebeautify.org+|site:jsfiddle.net+|site:repl.it+|site:codepen.io+|site:ideone.com+%%22%1%%22&num=100&client=firefox-b-d&filter=0"
 
