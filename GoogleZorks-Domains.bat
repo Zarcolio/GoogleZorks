@@ -68,7 +68,7 @@ start "" "https://www.google.com/search?q=site:%1+inurl%%3Aservlet%%3Dhttp+%%7C+
 timeout /t 10
 start "" "https://www.google.com/search?q=site:%1+inurl%%3Aservlet%%3Dhttps+%%7C+inurl%%3Aredir%%3Dhttps+%%7C+inurl%%3Aredirect%%3Dhttps+%%7C+inurl%%3Aredirecturl%%3Dhttps+%%7C+inurl%%3Aurl%%3Dhttps+%%7C+inurl%%3Arurl%%3Dhttps+%%7C+inurl%%3Ar_url%%3Dhttps+%%7C+inurl%%3Alink%%3Dhttps+%%7C+inurl%%3Ago%%3Dhttps+%%7C+inurl%%3Areturn%%3Dhttps+%%7C+inurl%%3Alocationurl%%3Dhttps+%%7C+inurl%%3Areturnuri%%3Dhttps+%%7C+inurl%%3Agoto%%3Dhttps+%%7C+inurl%%3Alogin?qurl+%%7C+inurl%%3Areturn_url%%3Dhttps&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?q=site:%1+%%22employees%%22+%%7C+%%22staff%%22%+%%7C+%%22working+at%%22&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=site:%1+%%22employees%%22+%%7C+%%22staff%%22+%%7C+%%22working+at%%22&num=100&client=firefox-b-d&filter=0"
 rem timeout /t 10
 rem start "" "https://www.google.com/search?q=%%22%1%%22+site:pastebin.com+%%7C+site:pastelink.net+%%7C+site:pastefs.com&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
@@ -103,7 +103,8 @@ start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1+%
 timeout /t 10
 start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1+%%22%year19%%%22+%%7C+%%22%year20%%%22+%%7C+%%22%year21%%%22+%%7C+%%22%year22%%%22+%%7C+%%22%year23%%%22+%%7C+%%22%year24%%%22+%%7C+%%22%year25%%%22+%%7C+%%22%year26%%%22+%%7C+%%22%year27%%%22"
 
-
+timeout /t 10
+start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1+inurl:fileadmin+%7C+inurl:uploads++%7C+inurl:upload++%7C+inurl:documents+%7C+inurl:file+%7C+inurl:files"
 
 
 REM Originally from https://pentest-tools.com/information-gathering/google-hacking#

@@ -52,3 +52,6 @@ timeout /t 10
 start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1+%%22laatst+bijgewerkt+%year10%%%22+%%7C+%%22laatst+bijgewerkt+%year11%%%22+%%7C+%%22laatst+bijgewerkt+%year12%%%22+%%7C+%%22laatst+bijgewerkt+%year13%%%22+%%7C+%%22laatst+bijgewerkt+%year14%%%22+%%7C+%%22laatst+bijgewerkt+%year15%%%22+%%7C+%%22laatst+bijgewerkt+%year16%%%22+%%7C+%%22laatst+bijgewerkt+%year17%%%22+%%7C+%%22laatst+bijgewerkt+%year18%%%22"
 timeout /t 10
 start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1+%%22laatst+bijgewerkt+%year19%%%22+%%7C+%%22laatst+bijgewerkt+%year20%%%22+%%7C+%%22laatst+bijgewerkt+%year21%%%22+%%7C+%%22laatst+bijgewerkt+%year22%%%22+%%7C+%%22laatst+bijgewerkt+%year23%%%22+%%7C+%%22laatst+bijgewerkt+%year24%%%22+%%7C+%%22laatst+bijgewerkt+%year25%%%22+%%7C+%%22laatst+bijgewerkt+%year26%%%22+%%7C+%%22laatst+bijgewerkt+%year27%%%22"
+
+timeout /t 10
+start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1+inurl:documenten"
