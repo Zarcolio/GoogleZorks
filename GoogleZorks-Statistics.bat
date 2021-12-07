@@ -16,4 +16,4 @@ start "" "https://www.google.nl/search?num=100&newwindow=1&q=%%22%1%%22+inurl%%3
 timeout /t 10
 start "" "https://www.google.nl/search?num=100&newwindow=1&q=%%22%1%%22+spam+|report+|blacklist|%%22abuse+report%%22+|attack"
 
-REM Test met 145.15.244.26 (NS wifi in de trein)
+
