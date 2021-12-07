@@ -51,7 +51,7 @@ REM Login pages:
 timeout /t 10
 start "" "https://www.google.com/search?q=site:%1+-site:www.%1+%%22Restricted+area%%22+%%7C+%%22login%%22+%%7C+%%22logon%%22+%%7C%%22log+on%%22+%%7C+%%22logoff%%22+%%7C%%22log-off%%22+%%7C%%22log+in%%22+%%7C+%%22signin%%22+%%7C+%%22signon%%22+%%7C%%22sign+in%%22+%%7C%%22sign+on%%22+%%7C+%%22password%%22+%%7C+%%22passwd%%22+%%7C+%%22user%%22+%%7C+%%22username%%22+%%7C+%%22account%%22+%%7C+%%22admin%%22+%%7C+%%22portal%%22+%%7C%%22web+access%%22+-user-agent&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
-start "" "https://www.google.com/search?q=site:www.%1+inurl:login+%%7C+inurl:logon+%%7C+inurl:signin+%%7C+inurl:signon+%%7C+inurl:admin+%%7C+inurl:portal+%%7C+intitle:login+%%7C+intitle:logon+%%7C+intitle:%%22log+on%%22+%%7C+intitle:%%22log+in%%22+%%7C+intitle:signin+%%7C+intitle:%%22sign+in%%22+%%7C+intitle:signon+%%7C+intitle:%%22sign+on%%22+%%7C+intitle:admin+%%7C+intitle:portal+%%7C+intitle:%%22web+access%%22+%%7C+FTP&num=100&client=firefox-b-d&filter=0"
+start "" "https://www.google.com/search?q=site:www.%1+inurl:login+%%7C+inurl:logon+%%7C+inurl:signin+%%7C+inurl:signon+%%7C+inurl:admin+%%7C+inurl:portal+%%7C+intitle:login+%%7C+intitle:logon+%%7C+intitle:%%22log+on%%22+%%7C+intitle:%%22log+in%%22+%%7C+intitle:signin+%%7C+intitle:%%22sign+in%%22+%%7C+intitle:signon+%%7C+intitle:%%22sign+on%%22+%%7C+intitle:admin+%%7C+intitle:portal+%%7C+intitle:%%22web+access%%22+%%7C+FTP+%%7C+%%22VPN%%22+%%7C+%%22IDP%%22+%%7C+%%22SSH%%22&num=100&client=firefox-b-d&filter=0"
 timeout /t 10
 start "" "https://www.google.com/search?q=site:%1+inurl%%3A%%2Foam%%2Fserver%%2Fobrareq.cgi+%%7C+ext%%3A%%22encquery%%22+%%7C+ext%%3A%%22Portal_Webcenter%%22+%%7C+oauth2+%%7C+inurl%%3A%%2Fnidp%%2Fsaml2+%%7C+inurl:SAML2/Redirect/+%%7C+inurl:/adfs/+%%7C+inurl:core/as_login.php?+%%7C+%%22CAS+Central+Authentication+Service%%22+%%7C+inurl:/cas/login/&num=100&client=firefox-b-d&filter=0"
 
@@ -104,7 +104,7 @@ timeout /t 10
 start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1+%%22%year19%%%22+%%7C+%%22%year20%%%22+%%7C+%%22%year21%%%22+%%7C+%%22%year22%%%22+%%7C+%%22%year23%%%22+%%7C+%%22%year24%%%22+%%7C+%%22%year25%%%22+%%7C+%%22%year26%%%22+%%7C+%%22%year27%%%22"
 
 timeout /t 10
-start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1+inurl:fileadmin+%7C+inurl:uploads++%7C+inurl:upload++%7C+inurl:documents+%7C+inurl:file+%7C+inurl:files+%7C+inurl:archive+%7C+inurl:archives"
+start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1+inurl:fileadmin+%7C+inurl:uploads++%7C+inurl:upload++%7C+inurl:documents+%7C+inurl:file+%7C+inurl:files+%7C+inurl:archive+%7C+inurl:archives+%%7C+%%22Index+of%%22"
 
 
 REM Originally from https://pentest-tools.com/information-gathering/google-hacking#
