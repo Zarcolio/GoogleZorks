@@ -12,8 +12,7 @@ start "" "https://www.google.nl/search?num=100&newwindow=1&q=%%22%1%%22"
 timeout /t 10
 start "" "https://www.google.nl/search?num=100&newwindow=1&q=%%22%1%%22+intitle%%3A%%22Statistics+for%%22+%%7C++awstats+%%7C+intitle%%3Apagecounter+%%7C+intitle%%3A%%22pagevisits+on%%22+%%7C+%%22Generated+by+Webalizer%%22+%%7C+%%22Summary+Period%%22+%%7C+%%22web+server%%22+%%7C++inurl:%%22LiveReport.aspx?id=%%22+|+%%22log%%22+|+%%22irc%%22+|+%%22channel%%22"
 timeout /t 10
-start "" "https://www.google.nl/search?num=100&newwindow=1&q=%%22%1%%22+inurl%%3A%%22open%%3Bcsv.last%%22+|+intitle%%3Abelstat+|intitle%%3A%%22Usage+statistics%%22|intext%%3A%%22If+you+remove+this+file%%2C+all+statistics+for+date%%22"
+start "" "https://www.google.nl/search?num=100&newwindow=1&q=%%22%1%%22+inurl%%3A%%22open%%3Bcsv.last%%22+|+intitle%%3Abelstat+|intitle%%3A%%22Usage+statistics%%22|intext%%3A%%22If+you+remove+this+file%%2C+all+statistics+for+date%%22|site:extremetracking.com"
 timeout /t 10
 start "" "https://www.google.nl/search?num=100&newwindow=1&q=%%22%1%%22+spam+|report+|blacklist|%%22abuse+report%%22+|attack"
-
 
