@@ -104,8 +104,7 @@ timeout /t 10
 start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1+%%22%year19%%%22+%%7C+%%22%year20%%%22+%%7C+%%22%year21%%%22+%%7C+%%22%year22%%%22+%%7C+%%22%year23%%%22+%%7C+%%22%year24%%%22+%%7C+%%22%year25%%%22+%%7C+%%22%year26%%%22+%%7C+%%22%year27%%%22"
 
 timeout /t 10
-start "" "https://www.google.com/search?num=100&filter=0&q=%%22%1%%22+-site:%1+inurl:fileadmin+%7C+inurl:uploads++%7C+inurl:upload++%7C+inurl:documents+%7C+inurl:file+%7C+inurl:files+%7C+inurl:archive+%7C+inurl:archives+%%7C+%%22Index+of%%22"
-
+start "" "https://www.google.com/search?num=100&filter=0&q=site:%1+inurl:fileadmin+%%7C+inurl:uploads++%%7C+inurl:upload++%%7C+inurl:documents+%%7C+inurl:file+%%7C+inurl:files+%%7C+inurl:archive+%%7C+inurl:archives+%%7C+%%22Index+of%%22+%%7C+%%22Choose+file%%22"
 
 REM Originally from https://pentest-tools.com/information-gathering/google-hacking#
 rem start "" "https://www.google.com/search?q=site:%1+intitle:index.of&num=100&client=firefox-b-d&filter=0"
