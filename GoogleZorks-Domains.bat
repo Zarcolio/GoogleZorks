@@ -29,6 +29,8 @@ SET year25=2019
 SET year26=2020
 SET year27=2021
 SET year28=2022
+SET year29=2023
+SET year30=2024
 
 REM Search for domains:
 
